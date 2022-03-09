@@ -1,15 +1,13 @@
-
+import Person from './components/Person';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello Dojo!</h1>
-      <h3>Things i need to do:</h3>
-        <li>Learn react</li>
-        <li>Climb Mt Everest</li>
-        <li>Run a marathon</li>
-        <li>Feed the dogs</li>
+      <Person firstName={"Jane"} lastName={"Doe"} age={45} hairColor={"Black"} />
+      <Person firstName={"John"} lastName={"Smith"} age={88} hairColor={"Brown"} />
+      <Person firstName={"Millard"} lastName={"Fillmore"} age={50} hairColor={"Brown"} />
+      <Person firstName={"Maria"} lastName={"Smith"} age={62} hairColor={"Brown"} />
     </div>
   );
 }
